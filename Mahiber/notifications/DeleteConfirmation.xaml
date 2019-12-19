@@ -1,0 +1,21 @@
+﻿<Window x:Class="Mahiber.notifications.DeleteConfirmation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mahiber.notifications"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"  WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Title="DeleteConfirmation" Height="100" Width="350">
+    <Grid Background="#181818">
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromTop, Duration=0:0:0.8}">
+            <StackPanel Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Name="MessageText" Text="Are Your Sure?" Foreground="Gray" Margin="0 20" FontSize="20" HorizontalAlignment="Center"/>
+                <StackPanel Orientation="Horizontal" Margin="0 0 0 20">
+                    <Button Name="OkButton" Content="OK" Width="80"  Click="OkButton_Click" Foreground="White" Margin="0 0 30 0" />
+                    <Button Name="CancelButton" Content="Cancel" Width="100" Background="#fff"  Click="CancelButton_Click" Foreground="Blue" />
+                </StackPanel>
+            </StackPanel>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</Window>
