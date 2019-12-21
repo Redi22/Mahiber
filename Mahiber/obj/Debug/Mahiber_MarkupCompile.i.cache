@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\kk\source\repos\Mahiber\Mahiber\App.xaml
-221936475329
+271267734366
 
-67-1743415256
+48-2132879431
 22544460240
-LoginForm.xaml;MainWindow.xaml;notifications\AdminNotification.xaml;notifications\DeleteConfirmation.xaml;notifications\ErrorMessage.xaml;notifications\SuccessMessage.xaml;notifications\UpcomingPayDate.xaml;Signup.xaml;UserControls\AttendanceForm.xaml;UserControls\CapitalDash.xaml;UserControls\ChangeAccountSetting.xaml;UserControls\EventForm.xaml;UserControls\MemberDash.xaml;UserControls\MemberForm.xaml;UserControls\MemberRoleRegistration.xaml;UserControls\PastEvent.xaml;UserControls\PayDateNotify.xaml;UserControls\PaymentForm.xaml;UserControls\RuleForm.xaml;UserControls\Settings.xaml;UserControls\UpcomingEvent.xaml;UserControls\ViolationDash.xaml;
+LoginForm.xaml;LoginWin.xaml;MainWindow.xaml;notifications\AdminNotification.xaml;notifications\DeleteConfirmation.xaml;notifications\ErrorMessage.xaml;notifications\SuccessMessage.xaml;notifications\UpcomingPayDate.xaml;Signup.xaml;SignUpForms\Essentials.xaml;SignUpForms\FinalPage.xaml;SignUpWindow.xaml;ThirdPage.xaml;UserControls\AttendanceForm.xaml;UserControls\CapitalDash.xaml;UserControls\ChangeAccountSetting.xaml;UserControls\EventForm.xaml;UserControls\MemberDash.xaml;UserControls\MemberForm.xaml;UserControls\MemberRoleRegistration.xaml;UserControls\PastEvent.xaml;UserControls\PayDateNotify.xaml;UserControls\PaymentForm.xaml;UserControls\RuleForm.xaml;UserControls\Settings.xaml;UserControls\UpcomingEvent.xaml;UserControls\ViolationDash.xaml;
 
 False
 

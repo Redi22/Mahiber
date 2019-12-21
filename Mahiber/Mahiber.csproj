@@ -85,58 +85,13 @@
     <Compile Include="LoginForm.xaml.cs">
       <DependentUpon>LoginForm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LoginWin.xaml.cs">
+      <DependentUpon>LoginWin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MahiberDbContext.cs" />
-    <Compile Include="Migrations\201910081327055_initial.cs" />
-    <Compile Include="Migrations\201910081327055_initial.designer.cs">
-      <DependentUpon>201910081327055_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910091740367_EventFin.cs" />
-    <Compile Include="Migrations\201910091740367_EventFin.designer.cs">
-      <DependentUpon>201910091740367_EventFin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910091837475_EventTime.cs" />
-    <Compile Include="Migrations\201910091837475_EventTime.designer.cs">
-      <DependentUpon>201910091837475_EventTime.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910101859126_MahiberModel.cs" />
-    <Compile Include="Migrations\201910101859126_MahiberModel.designer.cs">
-      <DependentUpon>201910101859126_MahiberModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910131025065_paystatus.cs" />
-    <Compile Include="Migrations\201910131025065_paystatus.designer.cs">
-      <DependentUpon>201910131025065_paystatus.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910131737046_DefaultsAdded.cs" />
-    <Compile Include="Migrations\201910131737046_DefaultsAdded.designer.cs">
-      <DependentUpon>201910131737046_DefaultsAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910131741048_DefaultsAdded2.cs" />
-    <Compile Include="Migrations\201910131741048_DefaultsAdded2.designer.cs">
-      <DependentUpon>201910131741048_DefaultsAdded2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910132133091_WithPay.cs" />
-    <Compile Include="Migrations\201910132133091_WithPay.designer.cs">
-      <DependentUpon>201910132133091_WithPay.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910142208229_AttendanceSatausAndFin.cs" />
-    <Compile Include="Migrations\201910142208229_AttendanceSatausAndFin.designer.cs">
-      <DependentUpon>201910142208229_AttendanceSatausAndFin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910150910150_typeDeleted.cs" />
-    <Compile Include="Migrations\201910150910150_typeDeleted.designer.cs">
-      <DependentUpon>201910150910150_typeDeleted.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910151019425_PayCodeRemoved.cs" />
-    <Compile Include="Migrations\201910151019425_PayCodeRemoved.designer.cs">
-      <DependentUpon>201910151019425_PayCodeRemoved.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910151044131_PaymentDate.cs" />
-    <Compile Include="Migrations\201910151044131_PaymentDate.designer.cs">
-      <DependentUpon>201910151044131_PaymentDate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201911102126406_RuleRegistrationDate.cs" />
-    <Compile Include="Migrations\201911102126406_RuleRegistrationDate.designer.cs">
-      <DependentUpon>201911102126406_RuleRegistrationDate.cs</DependentUpon>
+    <Compile Include="Migrations\201912212243384_initial_state.cs" />
+    <Compile Include="Migrations\201912212243384_initial_state.designer.cs">
+      <DependentUpon>201912212243384_initial_state.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\About.cs" />
@@ -165,6 +120,18 @@
     </Compile>
     <Compile Include="Signup.xaml.cs">
       <DependentUpon>Signup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpForms\Essentials.xaml.cs">
+      <DependentUpon>Essentials.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpForms\FinalPage.xaml.cs">
+      <DependentUpon>FinalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpWindow.xaml.cs">
+      <DependentUpon>SignUpWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThirdPage.xaml.cs">
+      <DependentUpon>ThirdPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\AttendanceForm.xaml.cs">
       <DependentUpon>AttendanceForm.xaml</DependentUpon>
@@ -212,6 +179,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="LoginWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -247,6 +218,22 @@
     <Page Include="Signup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SignUpForms\Essentials.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SignUpForms\FinalPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SignUpWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ThirdPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="UserControls\AttendanceForm.xaml">
       <SubType>Designer</SubType>
@@ -319,44 +306,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201910081327055_initial.resx">
-      <DependentUpon>201910081327055_initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910091740367_EventFin.resx">
-      <DependentUpon>201910091740367_EventFin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910091837475_EventTime.resx">
-      <DependentUpon>201910091837475_EventTime.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910101859126_MahiberModel.resx">
-      <DependentUpon>201910101859126_MahiberModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910131025065_paystatus.resx">
-      <DependentUpon>201910131025065_paystatus.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910131737046_DefaultsAdded.resx">
-      <DependentUpon>201910131737046_DefaultsAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910131741048_DefaultsAdded2.resx">
-      <DependentUpon>201910131741048_DefaultsAdded2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910132133091_WithPay.resx">
-      <DependentUpon>201910132133091_WithPay.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910142208229_AttendanceSatausAndFin.resx">
-      <DependentUpon>201910142208229_AttendanceSatausAndFin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910150910150_typeDeleted.resx">
-      <DependentUpon>201910150910150_typeDeleted.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910151019425_PayCodeRemoved.resx">
-      <DependentUpon>201910151019425_PayCodeRemoved.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910151044131_PaymentDate.resx">
-      <DependentUpon>201910151044131_PaymentDate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201911102126406_RuleRegistrationDate.resx">
-      <DependentUpon>201911102126406_RuleRegistrationDate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201912212243384_initial_state.resx">
+      <DependentUpon>201912212243384_initial_state.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -31,7 +31,7 @@
 
 
             <Expander 
-      Header="Full Payments">
+      Header="Full Payments" Foreground="DarkCyan">
 
                 <StackPanel
         Orientation="Vertical"

@@ -1,0 +1,53 @@
+﻿<Window x:Class="Mahiber.SignUpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mahiber"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" materialDesign:ThemeAssist.Theme="Light"
+        Title="SignUpWindow" Height="450" Width="600">
+    <Grid Background="#222222">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+       
+        <Grid  Grid.Row="0" Margin="30">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+           
+            <StackPanel Name="MainContent" Grid.Column="1" >
+                <StackPanel Width="200">
+                    <TextBlock Text="Essential Informations" Foreground="DarkCyan" Margin="0 10"/>
+                    <TextBox Name="MahiberName"
+  materialDesign:HintAssist.Hint="Mahiber Name"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    <TextBox Name="Description"  
+    Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+    Grid.Row="6" Grid.RowSpan="2" FontSize="12"
+    VerticalAlignment="Top"
+    Height="100"
+    AcceptsReturn="True" Margin="0 20"
+    TextWrapping="Wrap"
+    VerticalScrollBarVisibility="Auto"
+    materialDesign:HintAssist.Hint="Edir Description"
+     />
+                    <CheckBox 
+    x:Name="withpay" Checked="withpay_Checked" Unchecked="withpay_Unchecked"
+    Margin="0 8 0 0">With Pay?
+                    </CheckBox>
+
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <Button Grid.Row="2" Name="ContinueBtn" Click="Button_Click"
+    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+    Width="250" Height="40" IsEnabled="False"
+    >
+            <TextBlock Text="Continue" Name="cont_btn" FontSize="25" VerticalAlignment="Top"/>
+        </Button>
+
+    </Grid>
+</Window>

@@ -66,7 +66,7 @@ namespace Mahiber.UserControls
                 _context.Entry(mem).State = System.Data.Entity.EntityState.Modified;
                 _context.SaveChanges();
                 Payment pay = new Payment();
-                pay.PaidDate = PaymentDate;
+                pay.PaidDate = DateTime.Now.Date;
                 pay.Type = "Debit Cover";
                 pay.MemberId = mem.Id;
                 pay.Amount = amount;

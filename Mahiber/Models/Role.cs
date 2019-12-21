@@ -11,6 +11,12 @@ namespace Mahiber.Models
         public long Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        public bool EventPrivilage { get; set; }
+        public bool MemberPrivilage { get; set; }
+        public bool PaymentPrivilage { get; set; }
+        public bool RulePrivilage { get; set; }
+        public bool SuperAdminPrivilage { get; set; }
+        public DateTime RoleCreationDate { get; set; }
 
     }
 }

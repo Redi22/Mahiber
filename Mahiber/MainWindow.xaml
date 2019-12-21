@@ -131,7 +131,7 @@
                     <StackPanel Orientation="Horizontal" Width="200" Height="60">
 
                         <materialDesign:PackIcon Kind="Payment" Width="50" Margin="20 10 0 0" Height="40"/>
-                        <TextBlock FontSize="18" VerticalAlignment="Center" Margin="20" ><Run Text="Payment/Rent"/></TextBlock>
+                        <TextBlock FontSize="18" VerticalAlignment="Center" Margin="20" ><Run Text="Payment"/></TextBlock>
                     </StackPanel>
                 </ListViewItem>
 
@@ -174,6 +174,10 @@
                     <materialDesign:PackIcon Kind="Menu" Width="45" Height="40"/>
                 </Button>
             <Grid x:Name="named" Margin="30 0 0 0 " Grid.Column="0" Grid.ColumnSpan="4"  Grid.Row="1"  Grid.RowSpan="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="424*"/>
+                        <RowDefinition Height="155*"/>
+                    </Grid.RowDefinitions>
 
                 </Grid>
                 <Grid Height="250" Margin="20" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="5" Grid.Row="1" VerticalAlignment="Top">
@@ -195,14 +199,11 @@
                 <Grid Height="250" Margin="20" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="5" Grid.Row="2" VerticalAlignment="Center">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Grid Grid.Column="0" Name="Upcoming"  Margin="20" >
+                    <Grid  Name="Upcoming"  Margin="40 0" Width="400" >
 
                     </Grid>
-                    <Grid  Grid.Column="1" Name="Past" Margin="20" >
-
-                    </Grid>
+                    
 
                 </Grid>
 

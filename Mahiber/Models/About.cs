@@ -14,10 +14,12 @@ namespace Mahiber.Models
         public string Description { get; set; }
         public double MonthlyPayment { get; set; }
         public double PaymentFin { get; set; }
+        public double EventFin { get; set; }
         public double FirstFin { get; set; }
         public double SecondFin { get; set; }
         public double LastFin { get; set; }
         public bool WithPay { get; set; }
         public DateTime PayDay { get; set; }
+        public DateTime CreationDate { get; set; }
     }
 }

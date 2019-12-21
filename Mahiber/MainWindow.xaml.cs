@@ -52,7 +52,6 @@ namespace Mahiber
             dashbord3.Children.Add(new ViolationDash());
             Upcoming.Children.Clear();
             Upcoming.Children.Add(new UpcomingEvent());
-            Past.Children.Add(new PastEvent());
         }
         private void menuDrawerClose_Click(object sender, RoutedEventArgs e)
         {
@@ -125,7 +124,6 @@ namespace Mahiber
             dashbord2.Children.Clear();
             dashbord3.Children.Clear();
             Upcoming.Children.Clear();
-            Past.Children.Clear();
             named.Children.Clear();
             //ProfileView.Children.Clear();
         }
