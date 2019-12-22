@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Edir.forms.SignUpForms
+namespace Mahiber.forms.SignUpForms
 {
     /// <summary>
     /// Interaction logic for ThirdPage.xaml
@@ -41,7 +41,7 @@ namespace Edir.forms.SignUpForms
 
            
         }
-        public About returner()
+        public void returner()
         {
             mahiber.EventFin = Convert.ToInt64(EventFin.Text);
             mahiber.FirstFin = Convert.ToInt64(FirstFin.Text);
@@ -49,9 +49,9 @@ namespace Edir.forms.SignUpForms
             mahiber.LastFin = Convert.ToInt64(FinalFin.Text);
             mahiber.PaymentFin = Convert.ToInt64(PaymentFin.Text);
             mahiber.CreationDate = DateTime.Now.Date;
+            _context.Abouts.Add(mahiber);
+            _context.SaveChanges();
 
-
-            return mahiber;
         }
 
         private void FinishBtn_Click(object sender, RoutedEventArgs e)

@@ -30,6 +30,7 @@ namespace Mahiber.UserControls
         {
             InitializeComponent();
             _context = new MahiberDbContext();
+           
         }
         public void CheckAdmin(UserAccount Account)
         {
@@ -42,7 +43,7 @@ namespace Mahiber.UserControls
             {
                 if (NewPass.ToString() == Confirm.ToString())
                 {
-                    Account.Password = NewPass.ToString();
+                    Account.Password = NewPass.Password;
                     _context.Entry(Account).State = System.Data.Entity.EntityState.Modified;
                     _context.SaveChanges();
                     SuccessMessage sm = new SuccessMessage();

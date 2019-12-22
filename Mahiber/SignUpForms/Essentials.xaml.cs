@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Edir.forms.SignUpForms
+namespace Mahiber.forms.SignUpForms
 {
     /// <summary>
     /// Interaction logic for Essentials.xaml

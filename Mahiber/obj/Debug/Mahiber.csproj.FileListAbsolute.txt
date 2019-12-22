@@ -52,9 +52,7 @@ C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\UserControls\MemberRoleRegist
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\UserControls\ChangeAccountSetting.baml
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\UserControls\MemberRoleRegistration.baml
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\LoginForm.g.cs
-C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\Signup.g.cs
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\LoginForm.baml
-C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\Signup.baml
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\UserControls\CapitalDash.g.cs
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\UserControls\MemberDash.g.cs
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\UserControls\ViolationDash.g.cs
@@ -69,8 +67,6 @@ C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\notifications\AdminNotificati
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\notifications\AdminNotification.baml
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\UserControls\PayDateNotify.g.cs
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\UserControls\PayDateNotify.baml
-C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\LoginWin.g.cs
-C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\LoginWin.baml
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\SignUpForms\Essentials.g.cs
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\SignUpWindow.g.cs
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\SignUpForms\Essentials.baml
@@ -80,3 +76,8 @@ C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\ThirdPage.baml
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\SignUpForms\FinalPage.baml
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\SignUpForms\FinalPage.g.cs
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\Mahiber.Migrations.initial_state.resources
+C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\Report\DescriptionCard.g.cs
+C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\Report\ReportMain.g.cs
+C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\Report\DescriptionCard.baml
+C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\Report\ReportMain.baml
+C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\Mahiber.Migrations.date_added.resources

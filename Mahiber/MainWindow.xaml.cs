@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 using Mahiber.notifications;
 using Mahiber.UserControls;
 using Mahiber.Models;
+using Mahiber.forms.Report;
+
 namespace Mahiber
 {
     /// <summary>
@@ -28,11 +30,11 @@ namespace Mahiber
         About mahiber;
         public long AccountRole;
         UserAccount Account;
+        Role role;
         public MainWindow()
         {
             InitializeComponent();
             _context = new MahiberDbContext();
-            //Account.RoleId = 1;
             withPay = _context.Abouts.FirstOrDefault().WithPay;
             DateNow = DateTime.Now.Date;
             mahiber = _context.Abouts.FirstOrDefault();
@@ -43,6 +45,9 @@ namespace Mahiber
         {
             AccountRole = Account.RoleId;
             this.Account = Account;
+            role = _context.Roles.FirstOrDefault(r => r.Id == Account.RoleId);
+            Console.WriteLine(role.Name);
+            
         }
         public void Dash_view()
         {
@@ -79,6 +84,7 @@ namespace Mahiber
 
             clear_all();
             Settings settings = new Settings();
+            settings.CheckAdmin(Account);
             named.Children.Add(settings);
 
         }
@@ -86,7 +92,7 @@ namespace Mahiber
         private void Members_clicked(object sender, MouseButtonEventArgs e)
         {
 
-            if (AccountRole == 0)
+            if (role.MemberPrivilage)
             {
                 clear_all();
                 MemberForm Form = new  MemberForm();
@@ -94,7 +100,9 @@ namespace Mahiber
             }
             else
             {
-                
+                ErrorMessage er = new ErrorMessage();
+                er.MessageText.Text = "Access Denied";
+                er.Show();
             }
 
 
@@ -102,7 +110,7 @@ namespace Mahiber
 
         private void Event_clicked(object sender, MouseButtonEventArgs e)
         {
-            if (AccountRole != 2)
+            if (role.EventPrivilage)
             {
 
                 clear_all();
@@ -112,9 +120,9 @@ namespace Mahiber
             }
             else
             {
-                //ErrorMessage er = new ErrorMessage();
-                //er.MessageText.Text = "Access Denied";
-                //er.Show();
+                ErrorMessage er = new ErrorMessage();
+                er.MessageText.Text = "Access Denied";
+                er.Show();
             }
         }
 
@@ -127,16 +135,11 @@ namespace Mahiber
             named.Children.Clear();
             //ProfileView.Children.Clear();
         }
-        public void reset_color()
-        {
-            //brush.Color = ;
-            //listViewItem.Background = brush;
-        }
-
+        
        
         private void Rules_clicked(object sender, MouseButtonEventArgs e)
         {
-            if (AccountRole == 0)
+            if (role.RulePrivilage)
             {
 
                 clear_all();
@@ -144,9 +147,9 @@ namespace Mahiber
             }
             else
             {
-            //    ErrorMessage er = new ErrorMessage();
-            //    er.MessageText.Text = "Access Denied";
-            //    er.Show();
+                ErrorMessage er = new ErrorMessage();
+                er.MessageText.Text = "Access Denied";
+                er.Show();
             }
         }
 
@@ -160,7 +163,7 @@ namespace Mahiber
 
         private void Payment_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            if (true)
+            if (role.PaymentPrivilage)
             {
                 PaymentForm pm = new PaymentForm();
                 TimeSpan timeSpan = mahiber.PayDay.Date - DateTime.Now.Date;
@@ -206,7 +209,12 @@ namespace Mahiber
 
         private void ReportButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (role.SuperAdminPrivilage)
+            {
+                ReportMain report = new ReportMain();
+                clear_all();
+                named.Children.Add(report);
+            }
         }
     }
 }

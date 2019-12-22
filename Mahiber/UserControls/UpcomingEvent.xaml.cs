@@ -41,7 +41,7 @@ namespace Mahiber.UserControls
             }
             else
             {
-                eventDescription.Text = upcoming.Description.ToString();
+                eventDescription.Text = "There are no upcomming event.";
 
             }
 

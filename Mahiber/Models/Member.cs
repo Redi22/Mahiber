@@ -19,6 +19,7 @@ namespace Mahiber.Models
         public long Kebele { get; set; }
         public long PhoneNumber { get; set; }
         public string HouseNummber { get; set; }
+        public DateTime RegisteredDate { get; set; }
         public bool PayStatus { get; set; }
         public bool AttendStatus { get; set; }
         public double Debit { get; set; }

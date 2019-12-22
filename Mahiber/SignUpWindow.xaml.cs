@@ -1,4 +1,4 @@
-﻿using Edir.forms.SignUpForms;
+﻿using Mahiber.forms.SignUpForms;
 using Mahiber.Models;
 using Mahiber.SignUpForms;
 using System;
@@ -56,9 +56,7 @@ namespace Mahiber
             }
             else if(index == 1)
             {
-                mahiber = thirdPage.returner();
-                _context.Abouts.Add(mahiber);
-                _context.SaveChanges();
+                thirdPage.returner();
                 finalPage = new FinalPage();
                 MainContent.Children.Clear();
                 MainContent.Children.Add(finalPage);
@@ -71,6 +69,7 @@ namespace Mahiber
                 user.Username = finalPage.username.Text.ToString();
                 user.Password = finalPage.password.Password;
                 user.RoleId = 1;
+               
                 _context.UserAccounts.Add(user);
                 _context.SaveChanges();
 

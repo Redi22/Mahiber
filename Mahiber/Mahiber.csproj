@@ -85,13 +85,14 @@
     <Compile Include="LoginForm.xaml.cs">
       <DependentUpon>LoginForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LoginWin.xaml.cs">
-      <DependentUpon>LoginWin.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MahiberDbContext.cs" />
     <Compile Include="Migrations\201912212243384_initial_state.cs" />
     <Compile Include="Migrations\201912212243384_initial_state.designer.cs">
       <DependentUpon>201912212243384_initial_state.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912221735375_date_added.cs" />
+    <Compile Include="Migrations\201912221735375_date_added.designer.cs">
+      <DependentUpon>201912221735375_date_added.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\About.cs" />
@@ -118,8 +119,11 @@
     <Compile Include="notifications\UpcomingPayDate.xaml.cs">
       <DependentUpon>UpcomingPayDate.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Signup.xaml.cs">
-      <DependentUpon>Signup.xaml</DependentUpon>
+    <Compile Include="Report\DescriptionCard.xaml.cs">
+      <DependentUpon>DescriptionCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportMain.xaml.cs">
+      <DependentUpon>ReportMain.xaml</DependentUpon>
     </Compile>
     <Compile Include="SignUpForms\Essentials.xaml.cs">
       <DependentUpon>Essentials.xaml</DependentUpon>
@@ -179,10 +183,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="LoginWin.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -215,9 +215,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Signup.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Report\DescriptionCard.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Report\ReportMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="SignUpForms\Essentials.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -308,6 +312,9 @@
     </Compile>
     <EmbeddedResource Include="Migrations\201912212243384_initial_state.resx">
       <DependentUpon>201912212243384_initial_state.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912221735375_date_added.resx">
+      <DependentUpon>201912221735375_date_added.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

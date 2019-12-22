@@ -49,7 +49,8 @@ namespace Mahiber.UserControls
             {
                 admins.RoleId = Convert.ToInt64(RoleId.SelectedIndex);
                 admins.Username = Username.Text.Trim();
-                admins.Password = PasswordBox.ToString();
+                admins.Password = PasswordBox.Password;
+                
                 _context.UserAccounts.Add(admins);
                 _context.SaveChanges();
                 SuccessMessage Sm = new SuccessMessage();

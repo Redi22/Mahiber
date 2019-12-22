@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Mahiber
+namespace Mahiber.forms.Report
 {
     /// <summary>
-    /// Interaction logic for Signup.xaml
+    /// Interaction logic for DescriptionCard.xaml
     /// </summary>
-    public partial class Signup : Window
+    public partial class DescriptionCard : UserControl
     {
-        public Signup()
+        public DescriptionCard()
         {
             InitializeComponent();
         }

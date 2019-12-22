@@ -26,6 +26,7 @@ namespace Mahiber
         public LoginForm()
         {
             InitializeComponent();
+            _context = new MahiberDbContext();
         }
         private void loginBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -33,6 +34,7 @@ namespace Mahiber
             UserAccount user = new UserAccount();
             user.Username = Username.Text.Trim();
             user.Password = Password.ToString();
+        
 
             foreach (UserAccount u in userAccounts)
             {

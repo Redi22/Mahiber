@@ -38,14 +38,12 @@
                 There are three roles.
             </TextBlock>
             <TextBlock FontSize="12" TextWrapping="Wrap" Margin="5">
-                       2, Admins: this admin has all privilages except store privilages. There can be multiple admins but all will have equal privilages.
-            </TextBlock>
-            <TextBlock FontSize="12" TextWrapping="Wrap" Margin="5">
-                       1, Store Admin: this admin has privilages involving the store management. There can be multiple store admins but all will have equal privilages.
-            </TextBlock>
-            <TextBlock FontSize="12" TextWrapping="Wrap" Margin="5">
                        1, Super Admin: this admin has all privilages and also must add new admins. There can only be one super admin.
             </TextBlock>
+            <TextBlock FontSize="12" TextWrapping="Wrap" Margin="5">
+                       2, Admins: this admin has all privilages except store privilages. There can be multiple admins but all will have equal privilages.
+            </TextBlock>
+            
 
         </StackPanel>
     </Grid>

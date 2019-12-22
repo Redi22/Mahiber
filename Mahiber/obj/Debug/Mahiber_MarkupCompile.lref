@@ -1,14 +1,12 @@
 ﻿
 FC:\Users\kk\source\repos\Mahiber\Mahiber\App.xaml;;
 FC:\Users\kk\source\repos\Mahiber\Mahiber\LoginForm.xaml;;
-FC:\Users\kk\source\repos\Mahiber\Mahiber\LoginWin.xaml;;
 FC:\Users\kk\source\repos\Mahiber\Mahiber\MainWindow.xaml;;
 FC:\Users\kk\source\repos\Mahiber\Mahiber\notifications\AdminNotification.xaml;;
 FC:\Users\kk\source\repos\Mahiber\Mahiber\notifications\DeleteConfirmation.xaml;;
 FC:\Users\kk\source\repos\Mahiber\Mahiber\notifications\ErrorMessage.xaml;;
 FC:\Users\kk\source\repos\Mahiber\Mahiber\notifications\SuccessMessage.xaml;;
 FC:\Users\kk\source\repos\Mahiber\Mahiber\notifications\UpcomingPayDate.xaml;;
-FC:\Users\kk\source\repos\Mahiber\Mahiber\Signup.xaml;;
 FC:\Users\kk\source\repos\Mahiber\Mahiber\SignUpForms\Essentials.xaml;;
 FC:\Users\kk\source\repos\Mahiber\Mahiber\SignUpWindow.xaml;;
 FC:\Users\kk\source\repos\Mahiber\Mahiber\ThirdPage.xaml;;
@@ -26,4 +24,6 @@ FC:\Users\kk\source\repos\Mahiber\Mahiber\UserControls\RuleForm.xaml;;
 FC:\Users\kk\source\repos\Mahiber\Mahiber\UserControls\Settings.xaml;;
 FC:\Users\kk\source\repos\Mahiber\Mahiber\UserControls\UpcomingEvent.xaml;;
 FC:\Users\kk\source\repos\Mahiber\Mahiber\UserControls\ViolationDash.xaml;;
+FC:\Users\kk\source\repos\Mahiber\Mahiber\Report\DescriptionCard.xaml;;
+FC:\Users\kk\source\repos\Mahiber\Mahiber\Report\ReportMain.xaml;;
 
