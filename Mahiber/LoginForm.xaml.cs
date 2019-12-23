@@ -33,7 +33,7 @@ namespace Mahiber
             List<UserAccount> userAccounts = _context.UserAccounts.ToList();
             UserAccount user = new UserAccount();
             user.Username = Username.Text.Trim();
-            user.Password = Password.ToString();
+            user.Password = Password.Password;
         
 
             foreach (UserAccount u in userAccounts)
