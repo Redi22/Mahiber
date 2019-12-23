@@ -65,6 +65,7 @@ namespace Mahiber
             }
             else if(index == 2)
             {
+                thirdPage.FinishBtn_Click();
                 user = new UserAccount();
                 user.Username = finalPage.username.Text.ToString();
                 user.Password = finalPage.password.Password;
@@ -72,6 +73,8 @@ namespace Mahiber
                 
                 _context.UserAccounts.Add(user);
                 _context.SaveChanges();
+
+
 
             }
         }

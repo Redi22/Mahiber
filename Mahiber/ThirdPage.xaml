@@ -29,12 +29,7 @@
         <TextBox Name="PaymentFin"
   materialDesign:HintAssist.Hint="Payment Fin"
   Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
-        <Button x:Name="FinishBtn" Click="FinishBtn_Click"
-    Style="{StaticResource MaterialDesignRaisedAccentButton}"
-    Width="150" Height="30"  Margin="30,30,20,30"
-    >
-            <TextBlock Text="Finish" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        </Button>
+       
 
     </StackPanel>
     </ScrollViewer>

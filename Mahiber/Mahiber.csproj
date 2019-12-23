@@ -86,9 +86,9 @@
       <DependentUpon>LoginForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="MahiberDbContext.cs" />
-    <Compile Include="Migrations\201912231520545_initial_state.cs" />
-    <Compile Include="Migrations\201912231520545_initial_state.designer.cs">
-      <DependentUpon>201912231520545_initial_state.cs</DependentUpon>
+    <Compile Include="Migrations\201912231631464_initial.cs" />
+    <Compile Include="Migrations\201912231631464_initial.designer.cs">
+      <DependentUpon>201912231631464_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\About.cs" />
@@ -313,8 +313,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201912231520545_initial_state.resx">
-      <DependentUpon>201912231520545_initial_state.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201912231631464_initial.resx">
+      <DependentUpon>201912231631464_initial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

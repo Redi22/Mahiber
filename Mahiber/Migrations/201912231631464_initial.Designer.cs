@@ -7,13 +7,13 @@ namespace Mahiber.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.3.0")]
-    public sealed partial class initial_state : IMigrationMetadata
+    public sealed partial class initial : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(initial_state));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(initial));
         
         string IMigrationMetadata.Id
         {
-            get { return "201912231520545_initial_state"; }
+            get { return "201912231631464_initial"; }
         }
         
         string IMigrationMetadata.Source

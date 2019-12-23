@@ -54,7 +54,7 @@ namespace Mahiber.forms.SignUpForms
 
         }
 
-        private void FinishBtn_Click(object sender, RoutedEventArgs e)
+        public void FinishBtn_Click()
         {
             DateTime now = DateTime.Now.Date;
             role.Name = "Super Admin";
