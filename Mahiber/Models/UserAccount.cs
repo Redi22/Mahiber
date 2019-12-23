@@ -9,6 +9,7 @@ namespace Mahiber.Models
 {
     public class UserAccount
     {
+       
         public long Id { get; set; }
         public long RoleId { get; set; }
         public string Username { get; set; }

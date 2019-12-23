@@ -75,9 +75,10 @@ C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\ThirdPage.g.cs
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\ThirdPage.baml
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\SignUpForms\FinalPage.baml
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\SignUpForms\FinalPage.g.cs
-C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\Mahiber.Migrations.initial_state.resources
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\Report\DescriptionCard.g.cs
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\Report\ReportMain.g.cs
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\Report\DescriptionCard.baml
 C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\Report\ReportMain.baml
-C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\Mahiber.Migrations.date_added.resources
+C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\UserControls\MainNotificationPage.g.cs
+C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\UserControls\MainNotificationPage.baml
+C:\Users\kk\source\repos\Mahiber\Mahiber\obj\Debug\Mahiber.Migrations.initial_state.resources

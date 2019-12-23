@@ -9,6 +9,10 @@ namespace Mahiber.Models
 {
    public class Payment
     {
+        public Payment()
+        {
+            PaidDate = DateTime.Now;
+        }
         public long Id { get; set; }
         public long MemberId { get; set; }
         public double Amount { get; set; }

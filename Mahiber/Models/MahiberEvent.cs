@@ -8,6 +8,11 @@ namespace Mahiber.Models
 {
     public class MahiberEvent
     {
+        public MahiberEvent()
+        {
+            Date =
+            Time = DateTime.Now;
+        }
         public long Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }

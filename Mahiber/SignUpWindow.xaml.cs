@@ -63,13 +63,13 @@ namespace Mahiber
                 cont_btn.Text = "Create Super Admin";
                 index++;
             }
-            else if(index == 3)
+            else if(index == 2)
             {
                 user = new UserAccount();
                 user.Username = finalPage.username.Text.ToString();
                 user.Password = finalPage.password.Password;
                 user.RoleId = 1;
-               
+                
                 _context.UserAccounts.Add(user);
                 _context.SaveChanges();
 

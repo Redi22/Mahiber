@@ -60,6 +60,7 @@ namespace Mahiber.forms.SignUpForms
             role.Name = "Super Admin";
             role.Description = "this admin has all privilages and also must add new admins.";
             role.SuperAdminPrivilage = true;
+            role.RulePrivilage = role.PaymentPrivilage = role.MemberPrivilage = role.EventPrivilage = true;
             role.RoleCreationDate = now;
             _context.Roles.Add(role);
             _context.SaveChanges();
@@ -67,7 +68,7 @@ namespace Mahiber.forms.SignUpForms
             role.Name = "Admin";
             role.Description = "this admin has all privilages except store privilages. There can be multiple admins but all will have equal privilages.";
             role.SuperAdminPrivilage =false;
-            role.RulePrivilage = role.PaymentPrivilage = role.MemberPrivilage = role.EventPrivilage = true;
+            role.RulePrivilage = role.MemberPrivilage = role.EventPrivilage = true;
             role.RoleCreationDate = now;
             _context.Roles.Add(role);
             _context.SaveChanges();

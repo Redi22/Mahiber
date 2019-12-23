@@ -13,7 +13,7 @@ namespace Mahiber.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201912212243384_initial_state"; }
+            get { return "201912231520545_initial_state"; }
         }
         
         string IMigrationMetadata.Source

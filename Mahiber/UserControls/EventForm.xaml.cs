@@ -128,9 +128,9 @@ namespace Mahiber.UserControls
                 EventTime.Text = selected.Time.ToShortTimeString(); 
 
             }
-            catch (Exception)
+            catch (Exception msg)
             {
-
+                Console.WriteLine(msg.Message);
             }
 
         }

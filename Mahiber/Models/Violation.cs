@@ -9,10 +9,17 @@ namespace Mahiber.Models
 {
     public class Violation
     {
+        public Violation()
+        {
+            ReportDate = DateTime.Now;
+        }
+
         public long Id { get; set; }
         public long RuleId { get; set; }
         public long MemberId { get; set; }
         public string Description { get; set; }
+        public DateTime ReportDate { get; set; }
+
 
         [ForeignKey("MemberId")]
         public Member Memember { get; set; }

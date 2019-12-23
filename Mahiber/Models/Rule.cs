@@ -8,6 +8,10 @@ namespace Mahiber.Models
 {
     public class Rule
     {
+        public Rule()
+        {
+            RegisteredDate = DateTime.Now;
+        }
         public long Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }

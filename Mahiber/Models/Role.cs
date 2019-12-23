@@ -8,6 +8,10 @@ namespace Mahiber.Models
 {
     public class Role
     {
+        public Role()
+        {
+            RoleCreationDate = DateTime.Now;
+        }
         public long Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }

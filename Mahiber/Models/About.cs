@@ -8,6 +8,11 @@ namespace Mahiber.Models
 {
     public class About
     {
+        public About()
+        {
+            PayDay = DateTime.Now;
+            CreationDate = DateTime.Now;
+        }
         public long Id { get; set; }
         public string EdirName { get; set; }
         public double Capital { get; set; }
@@ -19,7 +24,7 @@ namespace Mahiber.Models
         public double SecondFin { get; set; }
         public double LastFin { get; set; }
         public bool WithPay { get; set; }
-        public DateTime PayDay { get; set; }
+        public DateTime PayDay       { get; set; }
         public DateTime CreationDate { get; set; }
     }
 }

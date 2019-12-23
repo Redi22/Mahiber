@@ -16,6 +16,7 @@ using Mahiber.notifications;
 using Mahiber.UserControls;
 using Mahiber.Models;
 using Mahiber.forms.Report;
+using Edir.notification;
 
 namespace Mahiber
 {
@@ -73,8 +74,7 @@ namespace Mahiber
         private void notificationButton_Click(object sender, RoutedEventArgs e)
         {
             clear_all();
-            //Pay LastPay = _context.Payments.LastOrDefault();
-            //List<Pay> pays = _context.Payments.Where(p => p.PaymentCode == LastPay.PaymentCode).ToList();
+            named.Children.Add(new MainNotificationPage());
            
 
         }
