@@ -27,7 +27,8 @@ namespace Mahiber.UserControls
         List<Attendance> attendances;
         List<Member> allMembers;
         long SelectedSubcity;
-       
+        private List<Member> allMember;
+
         public MemberForm()
         {
             InitializeComponent();
@@ -319,7 +320,12 @@ namespace Mahiber.UserControls
 
         private void refreshBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            allMember = _context.Members.ToList();
+            MemGrid.ItemsSource = allMember;
+            ViolationsView.ItemsSource = _context.Violations.Where(v => v.MemberId == member.Id).ToList();
+            attendances = _context.Attendances.Where(a => a.MemberId == member.Id).ToList();
+            if (attendances != null)
+                AttebdanceView.ItemsSource = attendances;
         }
     }
 }

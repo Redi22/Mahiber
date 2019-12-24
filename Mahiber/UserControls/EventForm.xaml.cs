@@ -25,6 +25,8 @@ namespace Mahiber.UserControls
         private MahiberDbContext _context = null;
         List<MahiberEvent> allEvents;
         List<Member> members;
+        private List<MahiberEvent> allEvent;
+
         public EventForm()
         {
             InitializeComponent();
@@ -147,13 +149,10 @@ namespace Mahiber.UserControls
 
         private void refreshBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            allEvent = _context.MahiberEvents.ToList();
+            EventGrid.ItemsSource = allEvent;
         }
 
-        private void Review_Click(object sender, RoutedEventArgs e)
-        {
-
-
-        }
+       
     }
 }

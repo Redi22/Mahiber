@@ -158,14 +158,14 @@
 
                         </DataGrid>
                         <StackPanel>
-                            <Expander Width="600" materialDesign:ThemeAssist.Theme="Light"
+                            <Expander Width="600" materialDesign:ThemeAssist.Theme="Light" Foreground="Black"
     HorizontalAlignment="Stretch"
     Header="Violation ">
                                 <StackPanel
-      Orientation="Vertical"
+      Orientation="Vertical" 
       TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
       Margin="24,8,24,16">
-                                    <DataGrid AutoGenerateColumns="False" Name="ViolationsView" Margin="13,20,-3,5">
+                                    <DataGrid AutoGenerateColumns="False"  Name="ViolationsView" Margin="13,20,-3,5">
                                         <DataGrid.Columns>
                                             <DataGridTextColumn x:Name="IDsColumn" Header="ID" Width="70" Binding="{Binding Id}"/>
                                             <DataGridTextColumn x:Name="RuleIdColumn" Header="Rule ID" Width="120" Binding="{Binding RuleId}"/>
@@ -178,7 +178,7 @@
                                 </StackPanel>
                             </Expander>
 
-                                <Expander Width="600" materialDesign:ThemeAssist.Theme="Light"
+                                <Expander Width="600" materialDesign:ThemeAssist.Theme="Light" Foreground="Black"
     HorizontalAlignment="Stretch"
     Header="Attendance ">
                                     <StackPanel

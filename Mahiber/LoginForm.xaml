@@ -5,16 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Mahiber"
         mc:Ignorable="d"
-         Foreground="White" WindowStartupLocation="CenterScreen"
+         Foreground="White" WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="LoginWin" Height="450" Width="800">
-    <Grid  Background="#181818">
+        Title="LoginWin" Height="400" Width="400">
+    <Grid  Background="#2E4151">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
 
         </Grid.ColumnDefinitions>
-        <StackPanel Background="#2E4151" x:Name="InfoPanel" Grid.Column="0">
+        <!--<StackPanel Background="#2E4151" x:Name="InfoPanel" Grid.Column="0">
 
             <Label VerticalAlignment="Top" HorizontalAlignment="Center">
                 <materialDesign:PackIcon Kind="Speaker" Height="100" Width="100"/>
@@ -23,10 +22,10 @@
             <Label Content="MAHIBER" FontWeight="DemiBold" FontSize="30" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Center" Height="45" Margin="130,0,123,0"/>
             <TextBlock x:Name="descriptionText"  Foreground="White" TextWrapping="Wrap" Margin="20 15" Text="um doin it damn um doin it damn um doin it damn um doin it damn um doin it damn um doin it damn um doin it damn um doin it damn " />
             <TextBlock Text="Version 1.0" Foreground="White" FontSize="11" Margin="100" HorizontalAlignment="Center" Height="18" Width="82" />
-        </StackPanel>
-        <StackPanel Grid.Column="1" Margin="50 80">
+        </StackPanel>-->
+        <StackPanel Grid.Column="1" Margin="50">
 
-            <Label Foreground="Cyan" Content="Login" Grid.Row="0" FontSize="17" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <Label Foreground="White" FontSize="24" Content="MAHIBER" Grid.Row="0"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
 
             <TextBox Width = " 200 " Name="Username" FontSize="11" Style="{StaticResource MaterialDesignFloatingHintTextBox}" >
                 <materialDesign:HintAssist.Hint>
@@ -45,7 +44,7 @@
                 </materialDesign:HintAssist.Hint>
             </PasswordBox>
             <Button Margin="30" Name="loginBtn" Click="loginBtn_Click"
-    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+    Style="{StaticResource MaterialDesignRaisedButton}"
     Width="100"
     ToolTip="Resource name: MaterialDesignRaisedAccentButton">
                 Login

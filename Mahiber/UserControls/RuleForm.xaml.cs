@@ -28,6 +28,8 @@ namespace Mahiber.UserControls
         Rule rule;
         About Mahiber;
         Violation violation = null;
+        private List<Member> allRule;
+
         public RuleForm()
         {
             InitializeComponent();
@@ -208,7 +210,8 @@ namespace Mahiber.UserControls
 
         private void refreshBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            allRule = _context.Members.ToList();
+            RulesGrid.ItemsSource = allRule;
         }
     }
 }

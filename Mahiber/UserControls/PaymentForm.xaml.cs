@@ -60,9 +60,9 @@ namespace Mahiber.UserControls
             Member mem = ((Member)MemberId.SelectedItem);
             if (mem != null)
             {
-                double amount = mem.Debit;
-                mahiber.Capital += mem.Debit;
-                mem.Debit = 0;
+                double amount = Convert.ToInt64(amountPaid.Text);
+                mahiber.Capital += amount;
+                mem.Debit -= amount;
                 _context.Entry(mem).State = System.Data.Entity.EntityState.Modified;
                 _context.SaveChanges();
                 Payment pay = new Payment();

@@ -6,7 +6,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:Mahiber"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen" materialDesign:ThemeAssist.Theme="Light"
-        Title="MainWindow" Height="650" Width="1024">
+        Title="MainWindow" Height="650" Width="1024" ResizeMode="NoResize">
     <Window.Resources>
         <Storyboard x:Key="Storyboard1">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid1">
@@ -40,7 +40,7 @@
                 <EasingThicknessKeyFrame KeyTime="0" Value="-250,0,0,0"/>
                 <EasingThicknessKeyFrame KeyTime="0:0:1.2" Value="0"/>
             </ThicknessAnimationUsingKeyFrames>
-            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="Payment">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="listViewItem5">
                 <EasingThicknessKeyFrame KeyTime="0" Value="-250,0,0,0"/>
                 <EasingThicknessKeyFrame KeyTime="0:0:1.4" Value="0"/>
             </ThicknessAnimationUsingKeyFrames>
@@ -75,7 +75,7 @@
     </Window.Triggers>
     <Grid x:Name="MainGridView"  Width="1024">
 
-        <StackPanel x:Name="stackPanel1" Width="250" Margin="-250 0 0 0" HorizontalAlignment="Left" Grid.Column="0" Grid.RowSpan="4" Background="#2E4151" RenderTransformOrigin="0.5,0.5"  >
+        <StackPanel x:Name="stackPanel1" Width="250" Margin="-250 0 0 0" HorizontalAlignment="Left" Grid.Column="0" Grid.RowSpan="4" Background="#2E4151"  RenderTransformOrigin="0.5,0.5"  >
             <StackPanel.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -96,42 +96,43 @@
                     <materialDesign:PackIcon Kind="Report" Width="25" Height="25"/>
                 </Button>
             </StackPanel>
-            <ListView Margin="0 80" Foreground="White" >
+            <ListView Margin="0 80" Foreground="White" Height="550" >
                 <ListViewItem  PreviewMouseLeftButtonDown="Home_clicked" x:Name="listViewItem"   >
 
                     <StackPanel Orientation="Horizontal" Width="200" Height="60">
 
                         <materialDesign:PackIcon Kind="Home" Width="50" Margin="20 10 0 0" Height="40"/>
-                        <TextBlock FontSize="18" VerticalAlignment="Center" Margin="20" ><Run Text="Home"/></TextBlock>
+                        <TextBlock FontSize="16" VerticalAlignment="Center" Margin="20" ><Run Text="Home"/></TextBlock>
                     </StackPanel>
                 </ListViewItem>
 
                 <ListViewItem PreviewMouseLeftButtonDown="Members_clicked" x:Name="listViewItem1" >
                     <StackPanel Orientation="Horizontal" Width="200">
-                        <materialDesign:PackIcon Kind="People" Width="50" Margin="20 10 0 0" Height="40"/>
+                        <materialDesign:PackIcon Kind="People" Width="50" Margin="20 10 0 0" Height="35"/>
                         <TextBlock FontSize="18" VerticalAlignment="Center" Margin="20"><Run Text="Members"/></TextBlock>
 
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem PreviewMouseLeftButtonDown="Event_clicked" x:Name="listViewItem2">
                     <StackPanel Orientation="Horizontal" Width="200">
-                        <materialDesign:PackIcon Kind="Event" Width="50" Margin="20 10 0 0" Height="40"/>
-                        <TextBlock FontSize="18" VerticalAlignment="Center" Margin="20"><Run Text="Events"/></TextBlock>
+                        <materialDesign:PackIcon Kind="Event" Width="50" Margin="20 10 0 0" Height="35"/>
+                        <TextBlock FontSize="16" VerticalAlignment="Center" Margin="20"><Run Text="Events"/></TextBlock>
                     </StackPanel>
                 </ListViewItem>
+               
                 <ListViewItem PreviewMouseLeftButtonDown="Rules_clicked" x:Name="listViewItem4">
                     <StackPanel Orientation="Horizontal" Width="200">
-                        <materialDesign:PackIcon Kind="FileDocument" Width="50" Margin="20 10 0 0" Height="40"/>
-                        <TextBlock FontSize="18" VerticalAlignment="Center" Margin="20"><Run Text="Rules"/></TextBlock>
+                        <materialDesign:PackIcon Kind="FileDocument" Width="50" Margin="20 10 0 0" Height="35"/>
+                        <TextBlock FontSize="16" VerticalAlignment="Center" Margin="20"><Run Text="Rules"/></TextBlock>
 
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem  x:Name="Payment" PreviewMouseLeftButtonDown="Payment_PreviewMouseLeftButtonDown" >
+                <ListViewItem  x:Name="listViewItem5" PreviewMouseLeftButtonDown="Payment_PreviewMouseLeftButtonDown" >
 
-                    <StackPanel Orientation="Horizontal" Width="200" Height="60">
+                    <StackPanel Orientation="Horizontal" Width="200" >
 
-                        <materialDesign:PackIcon Kind="Payment" Width="50" Margin="20 10 0 0" Height="40"/>
-                        <TextBlock FontSize="18" VerticalAlignment="Center" Margin="20" ><Run Text="Payment"/></TextBlock>
+                        <materialDesign:PackIcon Kind="Payment" Width="50" Margin="20 10 0 0" Height="35"/>
+                        <TextBlock FontSize="16" VerticalAlignment="Center" Margin="20" ><Run Text="Payment"/></TextBlock>
                     </StackPanel>
                 </ListViewItem>
 
@@ -146,7 +147,7 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="250"/>
             </Grid.ColumnDefinitions>
-            <Grid x:Name="grid1" Grid.Column="0" Background="#fff" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Grid x:Name="grid1" Grid.Column="0"  Background="White" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
                 <Grid.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -158,6 +159,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="250"/>
 
                 </Grid.ColumnDefinitions>
@@ -167,19 +169,23 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Button  Click="menuDrawerClose_Click" Foreground="Blue" Grid.Row="0" x:Name="menuDrawerClose" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionMiniDarkButton}"    Background="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.363,0.444">
+                <Button Foreground="Blue" Click="menuDrawerClose_Click" Grid.Row="0" x:Name="menuDrawerClose" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"    Background="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.363,0.444">
                     <materialDesign:PackIcon Kind="Menu" Width="45" Height="40"/>
                 </Button>
-                <Button Style="{StaticResource MaterialDesignFloatingActionMiniDarkButton}"  Foreground="Blue" Click="menuDrawerOpen_Click" Grid.Row="0" x:Name="menuDrawerOpen" HorizontalAlignment="Left" VerticalAlignment="Top"   Background="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.363,0.444">
+                <Button Foreground="Blue" Click="menuDrawerOpen_Click" Grid.Row="0" x:Name="menuDrawerOpen" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"   Background="{x:Null}" BorderBrush="{x:Null}" RenderTransformOrigin="0.363,0.444">
                     <materialDesign:PackIcon Kind="Menu" Width="45" Height="40"/>
                 </Button>
-            <Grid x:Name="named"  Margin="30 0 0 0 " Width="1000" Height="650" Grid.Column="0" Grid.ColumnSpan="4"  Grid.Row="1"  Grid.RowSpan="6">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="424*"/>
-                        <RowDefinition Height="155*"/>
-                    </Grid.RowDefinitions>
+
+                <Grid x:Name="named" Margin="30 0 0 0 " Grid.Column="0" Grid.ColumnSpan="4"  Grid.Row="1"  Grid.RowSpan="3">
 
                 </Grid>
+
+                <!--<Grid x:Name="ProfileView"  >
+
+                   
+                </Grid>-->
+
+
                 <Grid Height="250" Margin="20" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="5" Grid.Row="1" VerticalAlignment="Top">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
@@ -200,16 +206,15 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Grid  Name="Upcoming"  Margin="40 0" Width="400" >
+                    <Grid Grid.Column="0" Name="Upcoming"  Width="500" Margin="40 0" >
 
                     </Grid>
-                   
-                    
+
 
                 </Grid>
-
             </Grid>
 
         </Grid>
+
     </Grid>
 </Window>
